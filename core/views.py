@@ -21,3 +21,7 @@ def inbox(request):
 
 def home(request):
     return render(request, 'index.html')
+
+
+# below must be Daniel's changes
+
