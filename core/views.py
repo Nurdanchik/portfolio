@@ -25,3 +25,4 @@ def home(request):
 
 # below must be Daniel's changes
 
+# all
