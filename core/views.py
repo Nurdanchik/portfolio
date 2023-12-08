@@ -25,7 +25,8 @@ def home(request):
 
 # below must be Daniel's changes
 
-
+def danielloh(request):
+    return render(request, 'index.html')
 
 
 
