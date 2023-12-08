@@ -25,3 +25,8 @@ def home(request):
 
 # below must be Daniel's changes
 
+
+
+
+
+# daniel's part also
