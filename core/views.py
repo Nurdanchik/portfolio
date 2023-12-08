@@ -21,3 +21,8 @@ def inbox(request):
 
 def home(request):
     return render(request, 'index.html')
+
+
+
+
+# daniel's part also
