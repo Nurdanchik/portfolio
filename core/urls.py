@@ -5,4 +5,5 @@ urlpatterns = [
     path('contact/', contact_view, name='contact_view'),
     path('inbox/', inbox, name='inbox'),
     path('', home, name='home'),
+    path('create/', create_post, name='create_post'),
 ]
