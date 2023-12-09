@@ -35,4 +35,4 @@ def create_post(request):
         form = PostForm()
     return render(request, 'index.html', {'form': form})
 
-# daniel's part also
+# daniel's part als
