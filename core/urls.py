@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import contact_view, inbox, home
+from .views import contact_view, inbox, home, create_post
 
 urlpatterns = [
     path('contact/', contact_view, name='contact_view'),
