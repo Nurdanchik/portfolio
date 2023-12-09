@@ -30,4 +30,4 @@ def danielloh(request):
 
 
 
-# daniel's part also
+# daniel's part als
