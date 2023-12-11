@@ -35,7 +35,6 @@ def create_post(request):
         form = PostForm()
     return render(request, 'index.html', {'form': form})
 
-<<<<<<< HEAD
 
 def create_post_source(request):
     if request.method == 'POST':
@@ -51,6 +50,3 @@ def create_post_source(request):
 # daniel's part also
 
 
-=======
-# daniel's part als
->>>>>>> master
