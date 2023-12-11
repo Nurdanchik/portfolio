@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
 from .models import ContactMessage, Post
-from .forms import ContactMessageForm, PostForm
+from .forms import ContactMessageForm, PostForm, PostSourceForm
 
 def contact_view(request):
     if request.method == 'POST':
@@ -35,4 +35,18 @@ def create_post(request):
         form = PostForm()
     return render(request, 'index.html', {'form': form})
 
+
+def create_post_source(request):
+    if request.method == 'POST':
+        form = PostSourceForm(request.POST, request.FILES)
+        if form.is_valid():
+            post_source = form.save()
+            return redirect('success_page')
+    else:
+        form = PostSourceForm()
+
+    return render(request, 'create_post_source.html', {'form': form})
+    
 # daniel's part also
+
+

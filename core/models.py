@@ -18,3 +18,15 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+ #daniel changes
+ 
+
+
+
+class PostSource(models.Model):
+    image = models.ImageField(upload_to='post_images/')
+    source = models.TextField()
+
+    def __str__(self):
+        return f"PostSource-{self.id}"

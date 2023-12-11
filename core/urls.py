@@ -6,4 +6,6 @@ urlpatterns = [
     path('inbox/', inbox, name='inbox'),
     path('', home, name='home'),
     path('create/', create_post, name='create_post'),
+    path('create/', create_post_source, name='create_post_source'),
 ]
+
