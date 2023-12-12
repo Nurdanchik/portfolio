@@ -41,11 +41,11 @@ def create_post_source(request):
         form = PostSourceForm(request.POST, request.FILES)
         if form.is_valid():
             post_source = form.save()
-            return redirect('success_page')
+            return redirect('home')
     else:
         form = PostSourceForm()
 
-    return render(request, 'create_post_source.html', {'form': form})
+    return render(request, 'index.html', {'form': form})
     
 # daniel's part also
 
